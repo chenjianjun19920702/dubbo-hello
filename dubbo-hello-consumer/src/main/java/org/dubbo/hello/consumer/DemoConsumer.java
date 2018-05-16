@@ -33,7 +33,6 @@ public class DemoConsumer {
         context.close();
     }
  
- 
     private static void getUser(String url) {
         System.out.println("Getting user via " + url);
         Client client = ClientBuilder.newClient();

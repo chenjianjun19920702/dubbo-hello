@@ -7,7 +7,7 @@
 
     <dubbo:application name="hello-consumer" owner="programmer" organization="dubbox"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry id="zk_registry" address="zookeeper://10.211.55.4:2181?backup=10.211.55.5:2181,10.211.55.6:2181" />
 
     <dubbo:reference id="userRestService" interface="org.dubbo.hello.api.service.UserRestService"/>
 
